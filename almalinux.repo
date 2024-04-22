@@ -1,0 +1,42 @@
+# almalinux.repo
+
+[baseos]
+name=AlmaLinux $releasever - BaseOS
+# mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/baseos
+baseurl=https://repo.station01.rminol.xyz/repository/almalinux/$releasever/BaseOS/$basearch/os/
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=https://repo.station01.rminol.xyz/repository/almalinux/RPM-GPG-KEY-AlmaLinux
+
+[appstream]
+name=AlmaLinux $releasever - AppStream
+# mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/appstream
+baseurl=https://repo.station01.rminol.xyz/repository/almalinux/$releasever/AppStream/$basearch/os/
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=https://repo.station01.rminol.xyz/repository/almalinux/RPM-GPG-KEY-AlmaLinux
+
+[extras]
+name=AlmaLinux $releasever - Extras
+# mirrorlist=https://mirrors.almalinux.org/mirrorlist/$releasever/extras
+baseurl=https://repo.station01.rminol.xyz/repository/almalinux/$releasever/extras/$basearch/os/
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=https://repo.station01.rminol.xyz/repository/almalinux/RPM-GPG-KEY-AlmaLinux
+
+[rhel8_hosted]
+name=RHEL 8 hosted repository
+baseurl=https://repo.station01.rminol.xyz/repository/rhel8-hosted/
+gpgcheck=0
+enabled=1
+
+[epel]
+name=Extra Packages for Enterprise Linux $releasever - $basearch
+baseurl=https://repo.station01.rminol.xyz/repository/epel/$releasever/Everything/$basearch
+enabled=1
+gpgcheck=1
+countme=1
+gpgkey=https://repo.station01.rminol.xyz/repository/epel/RPM-GPG-KEY-EPEL-8
