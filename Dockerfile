@@ -24,6 +24,9 @@ COPY app/* /app
 COPY fluent-bit/* /etc/fluent-bit/
 COPY supervisord.conf /supervisord.conf
 COPY crontab /etc/crontab
+COPY run.sh /
 
 # This line should be removed after development
 COPY .env /
+
+CMD ["/run.sh"]
