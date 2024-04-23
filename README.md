@@ -1,3 +1,7 @@
+# Crypto Market bit
+
+Keep an eye on crypto currency markets :D
+
 # Environment variables
 
     export ELASTIC_USER=elastic_user
@@ -7,6 +11,6 @@
     export CM_LOG_FILE="/var/log/cmarketcap.log"
     export CM_API_KEY='<APIKEY>'
 
-    export CM_CRYPTO_LISTING_START=1
-    export CM_CRYPTO_LISTING_END=200
+    export CM_CRYPTO_LISTING_START=201
+    export CM_CRYPTO_LISTING_LIMIT=200
     export ELASTIC_INDEX_PREFIX='cmarketcap-data'

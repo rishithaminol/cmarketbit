@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # cmarketbit1:
+  #   image: docker-dev.rminol.xyz/cmarketbit:0.1.1
+  #   container_name: cmarketbit1
+  #   restart: always
+  #   volumes:
+  #     - ./.env:/.env
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         memory: 2048M
+
+  cmarketbit2:
+    image: docker-dev.rminol.xyz/cmarketbit:0.1.1
+    container_name: cmarketbit2
+    restart: always
+    volumes:
+      - ./.env2:/.env
+    deploy:
+      resources:
+        limits:
+          memory: 2048M

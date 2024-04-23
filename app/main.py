@@ -38,7 +38,7 @@ def cm_rankings():
                             },
                             params={
                                 'start': os.getenv("CM_CRYPTO_LISTING_START"),
-                                'limit': os.getenv("CM_CRYPTO_LISTING_END")
+                                'limit': os.getenv("CM_CRYPTO_LISTING_LIMIT")
                             }, timeout=5)
     except requests.exceptions.ConnectionError as e:
         error_message(str(e))
